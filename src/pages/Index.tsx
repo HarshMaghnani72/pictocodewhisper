@@ -1,7 +1,7 @@
-<lov-code>
+
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Search, ShoppingCart, User, Truck, CreditCard, Tv, LayoutGrid, Check, ArrowRight, Instagram } from "lucide-react";
+import { Search, ShoppingCart, User, Truck, CreditCard, Tv, LayoutGrid, Check, ArrowRight, Instagram, MapPin, Mail, Phone, Shield, RefreshCw } from "lucide-react";
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -79,32 +79,32 @@ const Index = () => {
   const features = [
     {
       id: "delivery",
-      title: "Fast Delivery",
-      description: "Experience lightning-fast delivery across India with the assurance of multiple warehouses and efficient tracking system.",
+      title: "Pan India Delivery",
+      description: "Experience lightning-fast delivery across India with our state-of-the-art logistics network and real-time tracking system.",
       icon: <Truck className="w-6 h-6 text-purple-400" />
     },
     {
       id: "shipping",
-      title: "Easy Free Shipping",
-      description: "Hassle-free doorstep delivery with detailed package tracking for all domestic exchanges and returns.",
-      icon: <CreditCard className="w-6 h-6 text-purple-400" />
+      title: "Both Way Shipping",
+      description: "Enjoy free shipping both ways with our premium delivery service, including convenient doorstep pickup for returns.",
+      icon: <RefreshCw className="w-6 h-6 text-purple-400" />
     },
     {
-      id: "warranty",
-      title: "1-Year Warranty",
-      description: "Shop with confidence knowing you have a full year of warranty coverage on all of our products across all our collections.",
-      icon: <Tv className="w-6 h-6 text-purple-400" />
+      id: "payment",
+      title: "Cash on Delivery",
+      description: "Shop with confidence using our secure cash on delivery option, available across 20,000+ pin codes in India.",
+      icon: <CreditCard className="w-6 h-6 text-purple-400" />
     },
     {
       id: "return",
       title: "Easy Return",
-      description: "Experience lightning-fast delivery across India with the assurance of multiple warehouses and efficient tracking system.",
+      description: "Experience lightning-fast delivery across India with our state-of-the-art logistics network and real-time tracking system.",
       icon: <LayoutGrid className="w-6 h-6 text-purple-400" />
     },
     {
       id: "check",
       title: "Quality Check",
-      description: "Experience lightning-fast delivery across India with the assurance of multiple warehouses and efficient tracking system.",
+      description: "Experience lightning-fast delivery across India with our state-of-the-art logistics network and real-time tracking system.",
       icon: <Check className="w-6 h-6 text-purple-400" />
     }
   ];
@@ -112,23 +112,23 @@ const Index = () => {
   const socialPosts = [
     {
       id: "post1",
-      image: "/lovable-uploads/4897bd4b-7b98-4290-b9ce-959c1399b24f.png",
-      alt: "Fashion model in white outfit"
+      image: "/lovable-uploads/b34caac7-348e-4593-a840-fe9442fa5ee3.png",
+      alt: "Woman in white outfit against building"
     },
     {
       id: "post2",
-      image: "/lovable-uploads/4897bd4b-7b98-4290-b9ce-959c1399b24f.png",
-      alt: "Model in yellow outfit"
+      image: "/lovable-uploads/8eb2f183-53e7-4031-a0a7-813e5a8ab6d2.png",
+      alt: "Person in yellow outfit"
     },
     {
       id: "post3",
-      image: "/lovable-uploads/4897bd4b-7b98-4290-b9ce-959c1399b24f.png",
-      alt: "Close-up portrait"
+      image: "/lovable-uploads/0f162079-fbf1-4967-92f3-83c6ca82276c.png",
+      alt: "Portrait of woman in black"
     },
     {
       id: "post4",
       image: "/lovable-uploads/4897bd4b-7b98-4290-b9ce-959c1399b24f.png",
-      alt: "Man in stylish outfit"
+      alt: "Man in traditional outfit"
     },
     {
       id: "post5",
@@ -368,42 +368,63 @@ const Index = () => {
               <h3 className="text-lg font-medium mb-4">Contact Us</h3>
               <ul className="space-y-3 text-sm text-neutral-400">
                 <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 min-w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Premium Retail, 20/303 Studio, Mumbai</span>
+                  <MapPin className="h-5 w-5 min-w-5 text-neutral-500" />
+                  <span>Paawan's Hospital, Dhule</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 min-w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <span>contact@fadclothing.co.in</span>
+                  <Mail className="h-5 w-5 min-w-5 text-neutral-500" />
+                  <span>2023.paawan.matani@ves.ac.in</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 min-w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span>+91 9898989898</span>
+                  <Phone className="h-5 w-5 min-w-5 text-neutral-500" />
+                  <span>+91 9098908983</span>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium mb-4">We Accept</h3>
+              <h3 className="text-lg font-medium mb-4">We Guarantee</h3>
               <ul className="space-y-2 text-sm text-neutral-400">
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                  </svg>
-                  <span>Visa / Mastercard</span>
-                </a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z" />
-                  </svg>
+                <li className="flex items-center gap-2">
+                  <Truck className="h-5 w-5 text-neutral-500" />
+                  <span>Fast Delivery</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-neutral-500" />
                   <span>Secure Payment</span>
-                </a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 
+                </li>
+                <li className="flex items-center gap-2">
+                  <RefreshCw className="h-5 w-5 text-neutral-500" />
+                  <span>Easy Return</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-purple-900/30 pt-8 mb-8">
+            <h3 className="text-lg font-medium mb-4 text-center">Subscribe To Our Newsletter</h3>
+            <p className="text-sm text-neutral-400 text-center mb-6">
+              Stay Updated With Latest Trends And Exclusive Offers
+            </p>
+            <div className="flex max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="bg-black/80 border border-purple-900/30 px-4 py-2 rounded-l-md flex-grow focus:outline-none focus:border-purple-500"
+              />
+              <button className="bg-purple-600 text-white px-4 py-2 rounded-r-md hover:bg-purple-700 transition-colors">
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div className="text-center text-neutral-500 text-sm">
+            © 2024 FAD. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Index;
